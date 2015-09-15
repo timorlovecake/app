@@ -5,30 +5,14 @@ import javax.swing.JPanel;
 public class Screen extends JPanel{
 	
 	Screen(){
-	createARR();
-		
+	
 	repaint();	
 	}
+	
 	public void paint(Graphics g){
-	
-	for(int x=0;x<=600;x=x+60){
-	g.drawLine(x, 0, x, 600);	
-	}
-	for (int y=0;y<=600;y+=57){
-	g.drawLine(0, y, 600, y);
-	}
-	
+	g.DrawRect(0,0,10,10);
 	
 	}
 	
-	void createARR(){
-		boolean Arr[][]=new boolean[10][10];
-		for(int i=0;i<10;i++){
-		  for(int j=0;j<10;j++){
-			 Arr[i][j]=false;
-		}
-	}
 	
-	}
-
 }
